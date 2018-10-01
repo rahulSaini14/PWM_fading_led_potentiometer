@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"pwm_fading_led\startup_stm32f407xx.o"
+"pwm_fading_led\stm32f4xx_hal_flash_ramfunc.o"
+"pwm_fading_led\stm32f4xx_hal_cortex.o"
+"pwm_fading_led\stm32f4xx_hal_rcc_ex.o"
+"pwm_fading_led\stm32f4xx_hal_tim_ex.o"
+"pwm_fading_led\stm32f4xx_hal_tim.o"
+"pwm_fading_led\stm32f4xx_hal_pwr.o"
+"pwm_fading_led\stm32f4xx_hal.o"
+"pwm_fading_led\stm32f4xx_hal_gpio.o"
+"pwm_fading_led\stm32f4xx_hal_flash.o"
+"pwm_fading_led\stm32f4xx_hal_dma_ex.o"
+"pwm_fading_led\stm32f4xx_hal_pwr_ex.o"
+"pwm_fading_led\stm32f4xx_hal_rcc.o"
+"pwm_fading_led\stm32f4xx_hal_dma.o"
+"pwm_fading_led\stm32f4xx_hal_flash_ex.o"
+"pwm_fading_led\stm32f4xx_hal_adc.o"
+"pwm_fading_led\stm32f4xx_hal_adc_ex.o"
+"pwm_fading_led\stm32f4xx_hal_msp.o"
+"pwm_fading_led\main.o"
+"pwm_fading_led\stm32f4xx_it.o"
+"pwm_fading_led\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "pwm_fading_led\pwm_fading_led.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "pwm_fading_led.map" -o pwm_fading_led\pwm_fading_led.axf
